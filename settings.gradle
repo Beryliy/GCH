@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GHC"
 include ':app'
+include ':auth'
+include ':base'
+include ':auth_domain'
+include ':auth_entity'

@@ -1,0 +1,16 @@
+plugins {
+  id 'java-library'
+  id 'org.jetbrains.kotlin.jvm'
+  id 'kotlin'
+  id 'com.google.devtools.ksp' version "1.6.10-1.0.4"
+}
+
+java {
+  sourceCompatibility = JavaVersion.VERSION_11
+  targetCompatibility = JavaVersion.VERSION_11
+}
+
+dependencies {
+  implementation rest_api.values()
+  ksp("com.squareup.moshi:moshi-kotlin-codegen:$moshi_version")
+}
